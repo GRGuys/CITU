@@ -1,25 +1,137 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9r7-O6-CB9">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="huP-Kl-Hr3">
+            <objects>
+                <navigationController id="9r7-O6-CB9" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4tb-d5-ceo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="igc-5p-y0a" kind="relationship" relationship="rootViewController" id="1IO-q7-lWu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IjZ-bK-H3N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1251.5" y="329.5"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="PLs-5X-kto">
+            <objects>
+                <tabBarController id="igc-5p-y0a" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="k5v-AB-F5S"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Oot-kP-O7Y">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="lmu-AL-Fsi" kind="relationship" relationship="viewControllers" id="PEW-xB-zty"/>
+                        <segue destination="5NJ-p7-iLb" kind="relationship" relationship="viewControllers" id="fps-Lt-UHf"/>
+                        <segue destination="6Ai-Sr-8bD" kind="relationship" relationship="viewControllers" id="peH-2j-bTr"/>
+                        <segue destination="k98-aV-ntR" kind="relationship" relationship="viewControllers" id="duY-jE-qGI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nlV-Nz-3RZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-722.5" y="329.5"/>
+        </scene>
+        <!--Community Tab Nav-->
+        <scene sceneID="vex-gj-W6j">
+            <objects>
+                <navigationController id="5NJ-p7-iLb" customClass="CTCommunityTabNav" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="wall" id="END-6R-f6M"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JvS-St-IY8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="716-29-IYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1467.5" y="1206.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wun-cM-4Mv">
+            <objects>
+                <navigationController id="6Ai-Sr-8bD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="tree" id="D2g-r0-1TB"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="smr-Lb-eu7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="il9-gE-a8F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1046.5" y="1206.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mKw-Yi-8y5">
+            <objects>
+                <navigationController id="k98-aV-ntR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="man" id="gza-LA-lvq"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Nyl-O3-zU7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9RE-Gr-QWE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-617.5" y="1206.5"/>
+        </scene>
+        <!--Main Tab Nav-->
+        <scene sceneID="kSd-8D-bG5">
+            <objects>
+                <navigationController id="lmu-AL-Fsi" customClass="CTMainTabNav" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="" image="ball" id="Y3B-2B-cUh"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sdP-XQ-7G0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="yYT-5E-c7q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cg4-Ia-o46" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-237.5" y="-46.5"/>
+        </scene>
+        <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CTMainVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="EH9-OZ-U4k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Unp-xQ-lir"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="209.5" y="-46.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ball" width="48" height="48"/>
+        <image name="man" width="48" height="48"/>
+        <image name="tree" width="48" height="48"/>
+        <image name="wall" width="48" height="48"/>
+    </resources>
 </document>
